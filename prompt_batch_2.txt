@@ -1,0 +1,31 @@
+
+I will give you a list of numbered news summaries. Your task is to analyze each summary's likely short-term impact on three Turkish assets: USD/TRY (Dolar), Gold (Altın), and BIST 100 (Borsa).
+
+Rating Scale:
+- For USD/TRY (Dolar): A positive score means Lira strengthens (dollar falls). 1 = very negative (dollar soars), 3 = neutral, 5 = very positive (dollar drops).
+- For Gold (Altın) and Stock Market (Borsa): A positive score means the asset's value increases. 1 = very negative (price falls), 3 = neutral, 5 = very positive (price rises).
+
+For each number, you MUST respond with ONLY a valid JSON object in the format {"dolar": <score>, "altin": <score>, "borsa": <score>}. Do not add any other text or numbering. Start with the response for number 1, then a new line for number 2, and so on.
+
+Here are the summaries:
+---
+21. ""The FEMA thing has not been a very successful experiment," Trump said."
+22. "Trump called Musk "crazy" and has threatened to take away the billionaire's subsidies."
+23. "President Trump’s deployment of more than 700 Marines to Los Angeles—following ICE raids and mass protests—has ignited a fierce national debate over state sovereignty and civil-military boundaries."
+24. "Trump called former FBI Director James Comey a "dirty cop" and said he would leave it up to his underlings."
+25. "First Lady Melania Trump announced the "future of publishing" with an AI-narrated audiobook of her 2024 memoir."
+26. "Rightwing America doesn't seem too pleased that the defense contractor is playing a pivotal role in the Trump government."
+27. "Last Friday, Immigration and Customs Enforcement (ICE) agents arrested Newark mayor Ras Baraka outside a detention center. Baraka was trying to visit the facility - which opened recently and is operated by the GEO Group, a private prison company - with member…"
+28. "The president isn't the most tech-savvy fascist around."
+29. "Since taking office, Trump and his administration have hit the $42.5 billion Broadband Equity, Access, and Deployment fund with several major roadblocks."
+30. "In an open letter, the senators expressed concerns that the Trump administration may be offering countries tariff relief if they do business with Elon Musk."
+31. "Trump weakened understaffed National Weather Service offices. Some people in the storms' path wonder if budget cuts contributed to the death and destruction."
+32. "A series of shifting and often contradictory tariff policies have left a mess in their wake. Will Trump actually stick to this threat?"
+33. "The world's richest man navigates a treacherous period, marked by an insult-filled public feud with Donald Trump, a figure he significantly helped return to the White House."
+34. "Their feud began with Elon Musk's disappointment over a bill - now Trump is considering selling his Tesla."
+35. "President Trump has signed a proclamation banning travel to the US from nationals of 12 countries."
+36. "Two years after legal proceedings began, the SEC has formally dropped its lawsuit against Binance, the world’s largest crypto exchange. It was one of the US government’s final ongoing actions against crypto companies. Lawyers for the SEC and Binance jointly m…"
+37. "Trade chief Maros Sefcovic said the EU is "ready to defend" its interests after Trump threatened 50% tariffs on the bloc."
+38. "Musk wrote "whatever" in a social media post shortly after the comments."
+39. "A US president who vowed to be a peacemaker has to handle a new Middle East crisis that strikes a blow to his diplomatic efforts."
+40. "The Trump administration’s attempts to gut 12 energy efficiency standards could cost Americans billions of dollars in higher electricity bills.  The Department of Energy (DOE) recently announced that it plans to rollback dozens of policies in what it called i…"

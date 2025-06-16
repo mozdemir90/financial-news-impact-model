@@ -1,0 +1,31 @@
+
+I will give you a list of numbered news summaries. Your task is to analyze each summary's likely short-term impact on three Turkish assets: USD/TRY (Dolar), Gold (Altın), and BIST 100 (Borsa).
+
+Rating Scale:
+- For USD/TRY (Dolar): A positive score means Lira strengthens (dollar falls). 1 = very negative (dollar soars), 3 = neutral, 5 = very positive (dollar drops).
+- For Gold (Altın) and Stock Market (Borsa): A positive score means the asset's value increases. 1 = very negative (price falls), 3 = neutral, 5 = very positive (price rises).
+
+For each number, you MUST respond with ONLY a valid JSON object in the format {"dolar": <score>, "altin": <score>, "borsa": <score>}. Do not add any other text or numbering. Start with the response for number 1, then a new line for number 2, and so on.
+
+Here are the summaries:
+---
+201. "Today, in the Calculated Risk Real Estate Newsletter: Inflation Adjusted House Prices 1.0% Below 2022 Peak   Excerpt: It has been almost 19 ..."
+202. "At $450, the Switch 2 is Nintendo's priciest console. Mario Kart World is priced at $80 — higher than any first-party release in Nintendo history."
+203. "Here are a few measures of inflation:   The first graph is the one Fed Chair Powell had mentioned two years ago when services less rent of s..."
+204. "Bitcoin is here to save your money from inflation and central-bank meddling — if you notice in time."
+205. "nan"
+206. "Consumers are starting to feel more optimistic, based on the latest University of Michigan sentiment data. Part of that rise may be because they are less..."
+207. "nan"
+208. "Park bosses say they have faced a 50% real terms funding cut over the past decade."
+209. "The Consumer Price Index for May  is scheduled to be released tomorrow.  The consensus is for a 0.2% increase in CPI, and a 0.3% increase in..."
+210. "Israel's attack on Iran sparked the biggest jump in crude oil prices since Russia's invasion of Ukraine more than three years ago. Stocks fell sharply."
+211. "The government says every corner of the country will benefit, but research backers call for a long-term plan for science."
+212. "Walmart opened the door for retailers to hike prices over tariffs, but Home Depot doesn't plan to. Digging into each business helps explain why."
+213. "In addition to regular mortgage payments, thousands in so-called "hidden costs" also add up. These states have the highest and lowest expenses."
+214. ""Global economic prospects are weakening," the OECD said."
+215. "Hey, just back after taking the redeye home from Futureproof Colorado, and getting my feet back under me. But I wanted to briefly discuss tomorrow’s release of the University of Michigan (UMich) long-term inflation expectations. You probably know my thoughts …"
+216. "Stock valuations are historically high, and are hovering near levels that have preceded big downturns including the 1987 crash and the dot-com plunge."
+217. "The Bureau of Labor Statistics announced a reduction in data collection to put together the Consumer Price Index, which is used to estimate inflation in the United States. BLS is reducing sample in…"
+218. "From Fed Chair Powell: Opening Remarks .  Excerpts: The economic environment has changed significantly since 2020, and our review will refle..."
+219. "JPMorgan CEO Jamie Dimon said he always reads Warren Buffett and Andy Jassy's letters but skips some others, and called for a revamp of banking rules."
+220. "TSMC's CEO, CC Wei, said demand for AI chips has outpaced supply."

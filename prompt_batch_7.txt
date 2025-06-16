@@ -1,0 +1,31 @@
+
+I will give you a list of numbered news summaries. Your task is to analyze each summary's likely short-term impact on three Turkish assets: USD/TRY (Dolar), Gold (Altın), and BIST 100 (Borsa).
+
+Rating Scale:
+- For USD/TRY (Dolar): A positive score means Lira strengthens (dollar falls). 1 = very negative (dollar soars), 3 = neutral, 5 = very positive (dollar drops).
+- For Gold (Altın) and Stock Market (Borsa): A positive score means the asset's value increases. 1 = very negative (price falls), 3 = neutral, 5 = very positive (price rises).
+
+For each number, you MUST respond with ONLY a valid JSON object in the format {"dolar": <score>, "altin": <score>, "borsa": <score>}. Do not add any other text or numbering. Start with the response for number 1, then a new line for number 2, and so on.
+
+Here are the summaries:
+---
+121. "In its antitrust case against Meta, the US Federal Trade Commission is asking a judge to consider an alternate reality. In that world, the company never bought Instagram and WhatsApp. The two apps remained competitive with Facebook, developing features that c…"
+122. "Meta has filed a motion for judgment on the antitrust case it’s currently fighting in court. The motion argues that the Federal Trade Commission (FTC) has failed to produce any evidence that Meta unlawfully monopolized part of the social networking market, so…"
+123. "The Federal Aviation Authority (FAA) has given Amazon’s Prime Air drones the go-ahead to deliver new categories of devices, including products with lithium ion batteries like iPhones, AirPods, and more, Amazon has announced. The company says those product cat…"
+124. "Apple will have to continue allowing web links and external payment options in the App Store after its request to halt a judge’s order was rejected today by a higher court. In April, a federal judge demanded that Apple begin allowing web links, cease restrict…"
+125. "The BBC's Regan Morris reports from outside a federal building, where there have been violent clashes over the past few nights."
+126. "Central bankers agree to take a cautious approach until the net economic effects of trade policy are clearer."
+127. "Fed's Beige Book Reports across the twelve Federal Reserve Districts indicate that economic activity has declined slightly  since the previo..."
+128. "The transcript from this week’s, MiB: Tom Barkin, Richmond Federal Reserve President & CEO, is below. You can stream and download our full conversation, including any podcast extras, on Apple Podcasts, Spotify, YouTube, and Bloomberg. All of our earlier podca…"
+129. "Bitcoin traded relatively flat on Thursday as institutional investors resumed allocations into US-based spot bitcoin exchange-traded funds on Wednesday."
+130. "From the Fed: Minutes of the Federal Open Market Committee, May 6–7, 2025 .  Excerpt: In considering the outlook for monetary policy, partic..."
+131. "The Federal Reserve might have to sit tight for longer before changing interest rates, a top Fed official said.Read more..."
+132. "Prospective homebuyers will be challenged by expensive interest rates for a while."
+133. "Homebuyers might be forced to adjust to expensive interest rates over the long term."
+134. "With Trump's trade war, economic forecasts are changing every day."
+135. "A letter from the U.S. General Services Administration, which is dated Tuesday, tells agencies to submit a list of contracts they have terminated with the university by June 6."
+136. "A fleeting inflation bump might pave the way for the Federal Reserve to cut interest rates, according to a top Fed official.Read more..."
+137. "A federal program provides extra help to make sure students experiencing homelessness get an education. Amid massive cuts to the federal government, the program's future is uncertain."
+138. "The “One Big Beautiful Bill Act” that House Republicans narrowly passed early Thursday would strip state legislatures of AI oversight and scale back consumer protection and climate initiatives while funding border surveillance, among many other provisions. Th…"
+139. "The Class of 2025 is encountering the worst entry-level job market in years with unemployment among recent degree-holders aged 22 to 27 reaching 5.8% this spring -- the highest level in approximately four years and well above the national average. According t…"
+140. "STORY: "We're seeing sentiment start to improve in the UK and in China," said Haworth. "You're getting more stimulus out of these economies as well.""China..."

@@ -1,0 +1,31 @@
+
+I will give you a list of numbered news summaries. Your task is to analyze each summary's likely short-term impact on three Turkish assets: USD/TRY (Dolar), Gold (Altın), and BIST 100 (Borsa).
+
+Rating Scale:
+- For USD/TRY (Dolar): A positive score means Lira strengthens (dollar falls). 1 = very negative (dollar soars), 3 = neutral, 5 = very positive (dollar drops).
+- For Gold (Altın) and Stock Market (Borsa): A positive score means the asset's value increases. 1 = very negative (price falls), 3 = neutral, 5 = very positive (price rises).
+
+For each number, you MUST respond with ONLY a valid JSON object in the format {"dolar": <score>, "altin": <score>, "borsa": <score>}. Do not add any other text or numbering. Start with the response for number 1, then a new line for number 2, and so on.
+
+Here are the summaries:
+---
+241. "The price of Japanese-grown rice is soaring due to high inflation, low farm yields and a growing tourism sector."
+242. "Commentary: The math, not the tariffs and politics, leads me to predict a higher price for the iPhone 17 this year."
+243. "Commentary: Follow the math, not the tariffs and politics."
+244. "Ongoing uncertainty around the government's trade and economic policies is keeping mortgage rates high."
+245. "Expect news from Apple's WWDC, earnings reports from enterprise tech, and a key inflation reading that could affect the Fed's next interest rate decision"
+246. "Demand for Japan’s 40-year government bonds plunged Wednesday to its lowest level since last July, reinforcing fears that appetite for ultra-long Japanese..."
+247. "Caravan owners share allegations of unfair contracts and sharp practices by holiday parks."
+248. "Smartphones have been experiencing inflation for some time now, and we aren't just talking about the price. Flagship phones are bigger than they have ever..."
+249. "From the Census Bureau reported  that overall construction spending decreased:  Construction spending during April 2025 was estimated at a s..."
+250. "It’s a dubious distinction to have, but there’s good reason for it."
+251. "My end-of-week morning train WFH reads: • Consumers Prop Up the Economy. They’re Showing Signs of Strain. The U.S. consumer has seemed unstoppable in recent years, spending throughout soaring inflation and the highest borrowing costs in decades. That resilien…"
+252. "These low-risk accounts are a smart fit for your spending money, savings and more."
+253. "If tariff news has you spooked, these are the tricks I can currently recommend to help you track the prices that matter the most to you."
+254. "A hiring slowdown, due in part to economic uncertainty and ghost jobs, mean companies are  delaying or cancelling plans to grow their workforces."
+255. "Everyday Americans might feel anxious about inflation and tariffs, but according to JPMorgan Chase (JPM) CEO Jamie Dimon, Wall Street hasn’t even begun to worry enough — and that, he says, is a big mistake.Read more..."
+256. "The $1.50 Costco hot dog — a still point in a turning world, immune to tariffs, inflation, or even Jay Powell — remains the most reliable deal in America. In a time of relentless volatility, the Costco hot dog stands firm.Read more..."
+257. "U.S. consumer sentiment is hovering just above rock bottom, falling to its second-lowest level on record. Even in an economy that’s technically growing, households are increasingly uneasy. The culprit? Growing anxiety over tariffs, inflation, and trade policy…"
+258. "Affordability is on almost everyone’s mind these days, with tariffs, persistent inflation, and a housing crisis making things worse. But some states have more cost-of-living challenges than others.Read more..."
+259. "The survey ends five consecutive months of dampening consumer confidence."
+260. "The job market has defied concern about business uncertainty and recession risk."

@@ -1,0 +1,31 @@
+
+I will give you a list of numbered news summaries. Your task is to analyze each summary's likely short-term impact on three Turkish assets: USD/TRY (Dolar), Gold (Altın), and BIST 100 (Borsa).
+
+Rating Scale:
+- For USD/TRY (Dolar): A positive score means Lira strengthens (dollar falls). 1 = very negative (dollar soars), 3 = neutral, 5 = very positive (dollar drops).
+- For Gold (Altın) and Stock Market (Borsa): A positive score means the asset's value increases. 1 = very negative (price falls), 3 = neutral, 5 = very positive (price rises).
+
+For each number, you MUST respond with ONLY a valid JSON object in the format {"dolar": <score>, "altin": <score>, "borsa": <score>}. Do not add any other text or numbering. Start with the response for number 1, then a new line for number 2, and so on.
+
+Here are the summaries:
+---
+1. "I have been watching, with some grim amusement, Elon Musk discovering the limits of being just another political donor. While he was at DOGE, he literally could control the Treasury and DOD - he effectively had the IT reins of the entire country, and could si…"
+2. "Donald Trump and Elon Musk are going to war—and giving everyone a front row seat."
+3. "Donald Trump and Elon Musk, two of the most media-addled personalities of our time, are publicly torching their relationship by posting on the public social media networks they each respectively own. I have seen theories that this is kayfabe, and I don't buy …"
+4. "President Donald Trump told Apple CEO Tim Cook that he doesn’t want the company to move iPhone production to India. “I had a little problem with Tim Cook yesterday,” Trump said during his visit to Qatar. “You’re coming in with $500 billion, but now I hear you…"
+5. "The winners of the $TRUMP meme coin contest did get to see President Donald Trump speak at a private dinner closed to the press - but his speech was probably the least exciting part of their night. They did get a better, more valuable, and potentially more lu…"
+6. "President Donald Trump says he has reached a deal with China that will ensure the US receives rare earth materials, keeps tariffs at a total of 55 percent, and allows American universities to keep accepting Chinese students. Trump announced the news of the ag…"
+7. "As President Donald Trump kicked off a birthday military parade on the streets of Washington, DC, what's estimated as roughly 2,000 events were held across the US and beyond - protesting Trump and Elon Musk's evisceration of government services, an unpreceden…"
+8. "A group of young people — as young as 7 and as old as 25 — are suing the Trump administration to stop its assault on renewable energy and climate action.  Executive orders President Donald Trump signed to promote fossil fuels amount to an “unconstitutional” o…"
+9. "Trumpworld insiders fear that Elon Musk's attacks on Donald Trump's "Big Beautiful Bill" could kill it—and are already advising candidates to turn their backs on the world's richest man."
+10. "As Elon Musk and Donald Trump feuded, conspiracy theorists assured their followers it was all a show. "5D chess at its finest, baby—checkmate!” proclaimed one."
+11. "The Trump administration is working on an “AI.gov” website and API to “accelerate government innovation with AI,” 404 Media found based on code posted to Github and an early version of the site. The project appears to be run by the General Services Administra…"
+12. "After five years, I was still happy with my phone, even though its battery had started the inevitable process of slowing to a stop. But Donald Trump's tariff nonsense pushed me to make a decision: buy a new phone or fix the old one now, before the prices go u…"
+13. "President Donald Trump has threatened Apple with a tariff of “at least 25 percent” just for its iPhones unless it moves production to the United States. “I have long ago informed Tim Cook of Apple that I expect their iPhone’s that will be sold in the United S…"
+14. "A tiny but crucial agency that maintains physical coordinates like latitude and longitude in the US is struggling as the Trump administration forces out federal employees."
+15. "On this epsiode of Uncanny Valley, our senior politics editor joins us to discuss the implications of the collapse of the relationship between Trump and Musk."
+16. "Many of the crypto investors preparing to attend an exclusive gala dinner with US president Donald Trump have offloaded the coins that won them their seats."
+17. "Elon's tweet this week exacerbated a long-festering issue for the Trump White House."
+18. "Thanks to drastic policy changes in the US and Big Tech’s embrace of the second Trump administration, many people are moving their digital lives abroad. Here are a few options to get you started."
+19. "President Donald Trump’s media company could soon own $2.5 billion in Bitcoin. On Tuesday, Trump Media announced that it’s working with “approximately 50 institutional investors” to sell and issue $1.5 billion in stock and $1 billion in convertible notes. The…"
+20. ""Maybe the children will have two dolls instead of 30 dolls," Trump said."

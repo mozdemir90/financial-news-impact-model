@@ -1,0 +1,76 @@
+<!-- templates/index.html -->
+
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finansal Etki Tahmin Modeli</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .container { max-width: 800px; }
+        .card { margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center my-4">
+            <h1>Finansal Etki Tahmin Modeli</h1>
+            <p class="lead">Haber metinlerinin Dolar/TRY, Altın ve Borsa üzerindeki potansiyel etkisini (1-5 arası) tahmin edin.</p>
+        </div>
+
+        <div class="card p-4">
+            <form method="POST" action="/">
+                <div class="mb-3">
+                    <label for="news_text" class="form-label"><b>Haber Metnini Buraya Girin:</b></label>
+                    <textarea class="form-control" id="news_text" name="news_text" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Etkiyi Tahmin Et</button>
+            </form>
+        </div>
+
+        <!-- Sonuçlar sadece bir tahmin yapıldığında gösterilir -->
+        {% if results %}
+        <div class="card p-4">
+            <h3 class="mb-3">Tahmin Sonuçları</h3>
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Model</th>
+                        <th>Dolar/TRY Etkisi</th>
+                        <th>Altın Etkisi</th>
+                        <th>Borsa (BIST 100) Etkisi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for model_name, preds in results.items() %}
+                    <tr>
+                        <td><b>{{ model_name }}</b></td>
+                        <td>{{ preds.Dolar }}</td>
+                        <td>{{ preds.Altın }}</td>
+                        <td>{{ preds.Borsa }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+            <!-- YENİ AÇIKLAMA KUTUSU -->
+            <div class="alert alert-info mt-3" role="alert">
+                <h5 class="alert-heading">Skorlar Nasıl Yorumlanır?</h5>
+                <p>Skorlar <strong>1 (Çok Olumsuz Etki)</strong> ile <strong>5 (Çok Olumlu Etki)</strong> arasında bir değer alır. Her bir varlık için anlamları:</p>
+                <hr>
+                <ul>
+                    <li><strong>Dolar/TRY:</strong> Yüksek skor (5'e yakın), kurun <strong>yükselmesi</strong> (Dolar'ın değer kazanması / TRY'nin değer kaybetmesi) yönünde bir etkiyi belirtir.</li>
+                    <li><strong>Altın:</strong> Yüksek skor (5'e yakın), Altın fiyatının (ons/TL) <strong>artması</strong> yönünde bir etkiyi belirtir.</li>
+                    <li><strong>Borsa (BIST 100):</strong> Yüksek skor (5'e yakın), Borsa endeksinin <strong>yükselmesi</strong> (pozitif etki) yönünde bir etkiyi belirtir.</li>
+                </ul>
+            </div>
+            <!-- YENİ AÇIKLAMA KUTUSU SONU -->
+
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

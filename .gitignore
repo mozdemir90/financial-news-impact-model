@@ -1,0 +1,17 @@
+# Sanal ortam klasörü. Asla GitHub'a gönderilmez.
+venv/
+
+# Python'un oluşturduğu geçici dosyalar
+__pycache__/
+*.pyc
+
+# Çok büyük boyutlu GloVe dosyası.
+# Bunu kullanan kişiler kendileri indirmelidir.
+glove.6B.100d.txt
+
+# macOS'un oluşturduğu sistem dosyası
+.DS_Store
+
+# IDE'lerin oluşturduğu konfigürasyon dosyaları (isteğe bağlı)
+.idea/
+.vscode/

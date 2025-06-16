@@ -1,0 +1,38 @@
+
+I will give you a list of numbered news summaries. Your task is to analyze each summary's likely short-term impact on three Turkish assets: USD/TRY (Dolar), Gold (Altın), and BIST 100 (Borsa).
+
+Rating Scale:
+- For USD/TRY (Dolar): A positive score means Lira strengthens (dollar falls). 1 = very negative (dollar soars), 3 = neutral, 5 = very positive (dollar drops).
+- For Gold (Altın) and Stock Market (Borsa): A positive score means the asset's value increases. 1 = very negative (price falls), 3 = neutral, 5 = very positive (price rises).
+
+For each number, you MUST respond with ONLY a valid JSON object in the format {"dolar": <score>, "altin": <score>, "borsa": <score>}. Do not add any other text or numbering. Start with the response for number 1, then a new line for number 2, and so on.
+
+Here are the summaries:
+---
+141. "Federal Reserve Chair Jerome Powell has indicated that near-zero interest rates are likely to be a thing of the past.Read more..."
+142. "The key reports this week are May Retail Sales and Housing Starts.   For manufacturing, Industrial Production, and the NY and Philly Fed man..."
+143. "Reddit sued Anthropic on Wednesday in San Francisco superior court, claiming that the OpenAI rival had accessed its platform more than 100,000 times since July 2024, after Anthropic allegedly said it had blocked its bots from doing so.  In the filing, Reddit …"
+144. "The US Department of Transportation wants to make it easier for automakers and tech companies to deploy self-driving cars without traditional controls like steering wheels and pedals. In a letter sent to stakeholders, the department said it would streamline r…"
+145. "Weekend:  • Schedule for Week of June 1, 2025   Monday:  • At 10:00 AM ET, ISM Manufacturing Index  for May. The consensus is for the ISM to..."
+146. "President Donald Trump wants to double the amount of oil coursing through Alaska's vast pipeline system and build a massive natural gas project, a top administration official said Monday."
+147. "The interest rate on Apple Card's savings account was today lowered from 3.75% to 3.65%—an all-time low.
+
+
+
+
+
+The drop follows the last interest rate cut in March, where it reduced from 3.9% to 3.75%. If you deposited $1,000 into the account, and maintained t…"
+148. "Federal Reserve Chair Jerome Powell met with U.S. President Donald Trump today at the White House to discuss the state of the economy.Read more..."
+149. "After the chairman of the Federal Reserve, Jerome Powell, met with Donald Trump at the White House Thursday, the bank took the unprecedented step of releasing a statement asserting its independence. 
+The statement said that the Fed has an independent, nonpar…"
+150. "In a cost-cutting move, the Treasury Department will soon stop minting new pennies.  The one-cent coins will still be legal tender. There are more than 100 billion pennies in circulation but many are gathering dust in change jars and forgotten pockets."
+151. "The direction of mortgage rates hinges on Trump's tariff agenda, the Fed and the financial markets."
+152. "US Federal Reserve officials anticipated potential economic challenges. Rising inflation and unemployment were concerns discussed in their last meeting. Staff projections indicated increased recession risks. These risks were tied to proposed tariffs. The Fed …"
+153. "The preliminary injunction would prevent the federal government from revoking Harvard's ability to enroll international students."
+154. "The ruling from a three-judge panel at the New York-based Court of International Trade came after several lawsuits arguing that Trump has exceeded his authority."
+155. "The stakes are high in the case of a federal court blocking many of President Trump's tariffs this term. And, why Hungary and its leader are inspiring American conservatives."
+156. "A key Federal Reserve official said Monday he believes the central bank should cut interest rates once in 2025 and then sit tight to assess the fallout of President Donald Trump’s tariffs on the U.S. economy.Read more..."
+157. "After six-plus years under an asset cap imposed by the Federal Reserve, Wells Fargo (WFC) is now free to expand its balance sheet, signaling a significant milestone in the bank’s recovery from past scandals.Read more..."
+158. "The indictment was announced by interim U.S. Attorney for New Jersey Alina Habba. Rep. McIver says the proceedings against her are "a brazen attempt at political intimidation.""
+159. "After signaling that Khalil could be released Friday, Judge Michael Farbiarz accepted the government's shifting explanation for Khalil's continued detention."
+160. "Some federal agencies have gotten rid of the weekly "5 things" emails — once a DOGE staple."

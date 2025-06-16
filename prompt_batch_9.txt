@@ -1,0 +1,31 @@
+
+I will give you a list of numbered news summaries. Your task is to analyze each summary's likely short-term impact on three Turkish assets: USD/TRY (Dolar), Gold (Altın), and BIST 100 (Borsa).
+
+Rating Scale:
+- For USD/TRY (Dolar): A positive score means Lira strengthens (dollar falls). 1 = very negative (dollar soars), 3 = neutral, 5 = very positive (dollar drops).
+- For Gold (Altın) and Stock Market (Borsa): A positive score means the asset's value increases. 1 = very negative (price falls), 3 = neutral, 5 = very positive (price rises).
+
+For each number, you MUST respond with ONLY a valid JSON object in the format {"dolar": <score>, "altin": <score>, "borsa": <score>}. Do not add any other text or numbering. Start with the response for number 1, then a new line for number 2, and so on.
+
+Here are the summaries:
+---
+161. "The judge says the administration "unquestionably" violated his earlier order, which stated migrants cannot be deported to a country other than their own without having adequate notice and a chance to object."
+162. "Federal judges have stood as checks on Trump's power — but law clerks say behind closed doors, some created toxic, fear-driven workplaces where speaking out could end a career."
+163. "The Trump administration wants to allow a cutoff date for housing subsidies. The plan is deeply controversial, but Delaware offers a potential model for success."
+164. "The swell of optimism ended six straight months of worsening attitudes."
+165. "A federal appeals court granted the administration's request to temporarily halt a lower court's ruling on that invalidated most of Trump's tariffs."
+166. "nan"
+167. ""There will be no retirement. I'll die on the job," James Southern, 63, told BI. He doesn't see an end in sight to his student-loan payments."
+168. "In dribs and drabs, we’re starting to get a better idea of what Tesla’s robotaxi service will look like when it launches in Austin, Texas, in just a few weeks. But it’s not nearly enough given what’s at stake. The company is considering June 12th as a possibl…"
+169. "nan"
+170. "But in a mixed ruling, federal Judge Michael Farbiarz declined, for now, to order Khalil released from immigration detention."
+171. "(Bloomberg) -- US Treasuries are on track to deliver their first monthly loss this year, buffeted by renewed tariff uncertainty and growing anxiety over..."
+172. "The arguments focused on a separate question: can federal district court judges rule against the administration on a nationwide basis."
+173. "The suit claims that efforts to get sensitive information about food aid recipients from states violates federal privacy laws."
+174. "(Reuters) -U.S. President Donald Trump said on Wednesday that he was nominating Justice Department official Emil Bove, who previously defended Trump in a..."
+175. "The US taxpayer is going to be on the hook for all the soldiers, tanks, and planes that appear in Donald Trump's military parade. But several major tech companies are paying for the festivities along the parade route. According to recent statements from Ameri…"
+176. "Financial uncertainty has consumers worried but a financial expert advises people to create and stick to their budgets."
+177. "Google is using a new AI model to forecast tropical cyclones and working with the US National Hurricane Center (NHC) to test it out.  Google DeepMind and Google Research launched a new website today called Weather Lab to share AI weather models that Google is…"
+178. "Trump’s sweeping tariffs risk a brutal combination of an economic slowdown and high inflation."
+179. "LAS VEGAS (KLAS) – Hundreds of people gathered outside the Las Vegas Federal Courthouse in the downtown area in protest against federal immigration..."
+180. "The Fed is being treated as the adult in the room relative to Trump’s much-ridiculed child. Why?"

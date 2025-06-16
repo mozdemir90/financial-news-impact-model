@@ -1,0 +1,31 @@
+
+I will give you a list of numbered news summaries. Your task is to analyze each summary's likely short-term impact on three Turkish assets: USD/TRY (Dolar), Gold (Altın), and BIST 100 (Borsa).
+
+Rating Scale:
+- For USD/TRY (Dolar): A positive score means Lira strengthens (dollar falls). 1 = very negative (dollar soars), 3 = neutral, 5 = very positive (dollar drops).
+- For Gold (Altın) and Stock Market (Borsa): A positive score means the asset's value increases. 1 = very negative (price falls), 3 = neutral, 5 = very positive (price rises).
+
+For each number, you MUST respond with ONLY a valid JSON object in the format {"dolar": <score>, "altin": <score>, "borsa": <score>}. Do not add any other text or numbering. Start with the response for number 1, then a new line for number 2, and so on.
+
+Here are the summaries:
+---
+81. "The online brotherhood built on dominance and certainty is fracturing fast over real-world war."
+82. "North Korea is trying desperately to modernize its navy."
+83. "Musk has quietly deleted some of his inflammatory tweets about Trump since last week. In a podcast episode released Wednesday, Trump said he was disappointed in Musk but had "no hard feelings.""
+84. "President Trump is hosting an exclusive dinner tonight for the largest investors in the $TRUMP meme coin, putting the murky world of cryptocurrencies on a collision course with White House ethics."
+85. "As the Trump-Musk feud escalated, JD Vance signaled loyalty to Trump during a recent podcast appearance. At the same time, the vice president said he understands Musk's frustration."
+86. "WIRED spoke with someone who applied for a job at Elon Musk’s so-called DOGE and discussed the five-step hiring process."
+87. "DOGE tested and used Meta’s Llama 2 model to review and classify responses from federal workers to the infamous “Fork in the Road” email."
+88. "Multiple FEMA employees tell WIRED that they did not know of another time when a strategic plan was rescinded without another in place."
+89. "Why is everything like this now?"
+90. "A recent arrest is being used to bolster a popular MAGA conspiracy narrative."
+91. "How much attention did you pay to what has been going on in the world over the past seven days?"
+92. "How much attention did you pay to what's being going on in the world over the past seven days?"
+93. "Razer’s powerhouse Blade 18 portable gaming desktop replacement is launching today with a surprise price hike from its originally advertised $3,199.99 tag. The company has quietly raised the cost of the base spec, which features an RTX 5070 Ti graphics card, …"
+94. "Things are getting nutty in the world of vehicle fuel economy standards. Last week, Transportation Secretary (and ex-reality TV contestant) Sean Duffy declared that he was resetting the Corporate Average Fuel Economy (CAFE) standards that govern vehicle fuel …"
+95. "Bystanders and protesters have been confronting ICE agents as the Trump administration ramps up immigration enforcement."
+96. "Some early filers say worries about the future under the Trump administration moved up their timelines."
+97. "Ukraine launched a surprise attack on Russia that targeted more than 40 of the country's military aircraft on Sunday. The mission, called Operation Spiderweb, involved sending 117 drones over Russia's borders and into several of its airfields. It was the Ukra…"
+98. "YouTube has relaxed its moderation policies and is now instructing reviewers not to remove content that might violate its rules if they’re in the “public interest,” according to a report from The New York Times. The platform reportedly adjusted its policies i…"
+99. "We don’t typically report on monthly sales data for one car company in one market, but this one seems particularly notable given all that’s going on in the world. In another sign that Elon Musk’s company is in a real tough spot, Tesla is getting absolutely de…"
+100. "Angelenos are demanding the release of people detained by Immigration and Customs Enforcement (ICE), planning to gather in downtown Los Angeles for another day of protests following immigration raids throughout the region - but this time, against the backdrop…"

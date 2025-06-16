@@ -1,0 +1,31 @@
+
+I will give you a list of numbered news summaries. Your task is to analyze each summary's likely short-term impact on three Turkish assets: USD/TRY (Dolar), Gold (Altın), and BIST 100 (Borsa).
+
+Rating Scale:
+- For USD/TRY (Dolar): A positive score means Lira strengthens (dollar falls). 1 = very negative (dollar soars), 3 = neutral, 5 = very positive (dollar drops).
+- For Gold (Altın) and Stock Market (Borsa): A positive score means the asset's value increases. 1 = very negative (price falls), 3 = neutral, 5 = very positive (price rises).
+
+For each number, you MUST respond with ONLY a valid JSON object in the format {"dolar": <score>, "altin": <score>, "borsa": <score>}. Do not add any other text or numbering. Start with the response for number 1, then a new line for number 2, and so on.
+
+Here are the summaries:
+---
+41. "Elon Musk appeared alongside President Trump for a press conference in the Oval Office Friday, perhaps for the last time, with a noticeable black eye that he says he got from his young son. "I said, 'Go ahead, punch me in the face.' And he did," he said. Musk…"
+42. "Last week, Elon Musk’s media tour included telling CBS Sunday Morning he was “disappointed” by the Republican domestic policy bill backed by President Trump. Now, the former White House employee is calling it a “disgusting abomination” and claiming that Congr…"
+43. "President Donald Trump's warning that protesters of Saturday's US military parade in Washington, DC, will be met with "very heavy force" threatens to chill speech and underscores the need for protesters to take precautions around digital surveillance, privacy…"
+44. "The Trump administration has expanded military bases near the border in order to deploy troops to detain migrants."
+45. "Marco Rubio says the "only way we’re going to have a breakthrough here is between President Trump and President Putin"."
+46. "The world's richest man spent nearly 130 days working with the Trump administration to slash the federal government."
+47. "Right-wing Afrikaners groups celebrated the ambush but others in the Rainbow Nation found it "uncomfortable" to watch."
+48. "In a rare rebuke, the US president says he is "not happy" with his Russian counterpart over the latest attacks."
+49. "This has been a tumultuous week for the Jewish state, the BBC's Paul Adams writes."
+50. "Putin told him that he will have to respond to Ukraine's recent drone attacks, Trump said in a social media post."
+51. "Science done at U.S. institutions ought to line up with "what the administration is trying to accomplish," Linda McMahon said in an interview Wednesday."
+52. "They wanted to be in the room where it happens (and the "it" is corruption)."
+53. "The global celebration of the LGBT culture takes place near the White House after big shifts in US policy under Trump."
+54. "What a glorious day on the internet."
+55. "NASA might have other ideas, though."
+56. "But Elon Musk still needs to deliver the Cybercab before any of that can happen."
+57. "The agency forecasts up to 10 hurricanes for this year, half of which could be major."
+58. "During the 2024 elections, Musk dropped over a quarter of a billion backing Republican candidates. Now, he may owe voters $5,000,00."
+59. "The tax man won't be happy about this."
+60. "The billionaire appears to be trying to walk back from his clash with the president."

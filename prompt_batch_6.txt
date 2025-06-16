@@ -1,0 +1,31 @@
+
+I will give you a list of numbered news summaries. Your task is to analyze each summary's likely short-term impact on three Turkish assets: USD/TRY (Dolar), Gold (Altın), and BIST 100 (Borsa).
+
+Rating Scale:
+- For USD/TRY (Dolar): A positive score means Lira strengthens (dollar falls). 1 = very negative (dollar soars), 3 = neutral, 5 = very positive (dollar drops).
+- For Gold (Altın) and Stock Market (Borsa): A positive score means the asset's value increases. 1 = very negative (price falls), 3 = neutral, 5 = very positive (price rises).
+
+For each number, you MUST respond with ONLY a valid JSON object in the format {"dolar": <score>, "altin": <score>, "borsa": <score>}. Do not add any other text or numbering. Start with the response for number 1, then a new line for number 2, and so on.
+
+Here are the summaries:
+---
+101. "The Vice President said the Fed refusing to cut interest rates was "monetary malpractice," echoing sentiment voiced by Trump in recent months."
+102. "Consumer prices rose 2.4% over the year in May, slightly higher than the previous month but below economists' expectations."
+103. "The Cleveland Fed released  the median CPI and the trimmed-mean CPI.   According to the Federal Reserve Bank of Cleveland, the median Consum..."
+104. "Cathy Harris and Gwynne Wilcox, Democratic board members of independent agencies, argue President Trump lacked the authority to fire them, citing federal law and Supreme Court precedent."
+105. "For five weeks, the Federal Trade Commission asked a federal judge to imagine a world where Instagram and WhatsApp flourished outside Meta's control instead of being acquired by the tech giant. In the sixth and final week of trial, Meta asked Judge James Boas…"
+106. "The Supreme Court protected the Federal Reserve Thursday even as it allowed President Trump to fire the board members of two other independent agencies..."
+107. "Americans are feeling slightly more confident about inflation, jobs, and household finances, according to the New York Federal Reserve's latest consumer..."
+108. "nan"
+109. "Inflation isn't rising as expected, and Americans are feeling less anxious about it. But the fight to cut interest rates is heating up."
+110. "The Federal Reserve released the Q4 2024 Flow of Funds report today: Financial Accounts of the United States .  The net worth of households ..."
+111. "Smart CD investing isn't guesswork. It's about knowing when rates are in your favor."
+112. "Global holdings of the precious metal have neared highs reached more than half a century ago. It is now the second-largest reserve asset."
+113. "Storm streamers are using radars and AI robots to predict extreme weather for millions of YouTube subscribers, in some cases faster than the National Weather Service, which has been gutted by DOGE."
+114. "The undocumented migrant community in the United States is using social networks and other digital platforms to send alerts about raids and the presence of immigration agents around the US."
+115. "Market Domination Overtime anchors Julie Hyman and Josh Lipton preview the biggest news stories and market headlines expected out next week, including..."
+116. "For anyone who can afford to go solar, "now would be the time" because House Republicans want to end federal tax credits that make it affordable."
+117. "The US added 139,000 jobs in May, and unemployment held at 4.2% as expected."
+118. "Verizon has asked the Federal Communications Commission to get rid of the rule requiring it to unlock phones after 60 days. In a letter to the FCC spotted by LightReading, Verizon claims the current unlocking requirement “benefits bad actors and fraudsters.” …"
+119. "John Deere will have to fight the Federal Trade Commission’s antitrust lawsuit, which accuses the company of increasing repair costs by making farmers use its network of authorized dealers to fix their equipment, as reported earlier by Reuters. In a ruling on…"
+120. "There are too many planes in the sky. In 2024, the Federal Aviation Administration (FAA) supervised nearly 16.8 million flights in American airspace - half a million more than the year prior. To manage all of those airplanes, however, the FAA uses an air traf…"

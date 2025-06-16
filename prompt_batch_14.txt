@@ -1,0 +1,16 @@
+
+I will give you a list of numbered news summaries. Your task is to analyze each summary's likely short-term impact on three Turkish assets: USD/TRY (Dolar), Gold (Altın), and BIST 100 (Borsa).
+
+Rating Scale:
+- For USD/TRY (Dolar): A positive score means Lira strengthens (dollar falls). 1 = very negative (dollar soars), 3 = neutral, 5 = very positive (dollar drops).
+- For Gold (Altın) and Stock Market (Borsa): A positive score means the asset's value increases. 1 = very negative (price falls), 3 = neutral, 5 = very positive (price rises).
+
+For each number, you MUST respond with ONLY a valid JSON object in the format {"dolar": <score>, "altin": <score>, "borsa": <score>}. Do not add any other text or numbering. Start with the response for number 1, then a new line for number 2, and so on.
+
+Here are the summaries:
+---
+261. "The 30-year Treasury yield jumped more than 10 basis points, topping 5%, before easing just below that threshold by midday."
+262. "As much as housing skyrocketed in cost during and after the pandemic, food prices rose even faster. Read Next: 7 Overpriced Grocery Items Frugal People..."
+263. "Nearly 20% of adults from 14 countries believe they won’t be able to have the number of children they want to, new research has found."
+264. "Rightwing lawmakers say president’s bill – centered on tax cuts and funding deportations – doesn’t make enough cuts"
+265. "It's a local snapshot of a global trend."

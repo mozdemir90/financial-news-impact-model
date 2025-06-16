@@ -1,0 +1,31 @@
+
+I will give you a list of numbered news summaries. Your task is to analyze each summary's likely short-term impact on three Turkish assets: USD/TRY (Dolar), Gold (Altın), and BIST 100 (Borsa).
+
+Rating Scale:
+- For USD/TRY (Dolar): A positive score means Lira strengthens (dollar falls). 1 = very negative (dollar soars), 3 = neutral, 5 = very positive (dollar drops).
+- For Gold (Altın) and Stock Market (Borsa): A positive score means the asset's value increases. 1 = very negative (price falls), 3 = neutral, 5 = very positive (price rises).
+
+For each number, you MUST respond with ONLY a valid JSON object in the format {"dolar": <score>, "altin": <score>, "borsa": <score>}. Do not add any other text or numbering. Start with the response for number 1, then a new line for number 2, and so on.
+
+Here are the summaries:
+---
+221. "The sweeping Republican mega-bill hit a major road block, threatening to derail huge parts of Trump's second-term agenda."
+222. "For decades, McDonald’s reigned supreme as the go-to spot for a cheap burger fix, but those days are officially over. In an era of shifting prices and..."
+223. "IDC has lowered its forecast of its smartphone sales in 2025 to 0.6% reaching, 1.24 billion units, due to the economic uncertainty brought about by U.S. tariffs."
+224. "You can expect to see prices creep up in the next few weeks."
+225. "At the Calculated Risk Real Estate Newsletter this week:   Click on graph for larger image.   • Case-Shiller: National House Price Index Up ..."
+226. "This holiday weekend, more than 45 million people will travel, according to AAA. These tips could help you save on your getaway."
+227. "The outlook for earnings is brightening, Morgan Stanley CIO Mike Wilson said. More upward revisions has historically led to 13% boost for the S&P 500."
+228. "Nvidia reports earnings today from unfamiliar territory, amid tariff uncertainty and volatility."
+229. "AI is enabling big-box stores like The Home Depot, Walmart, and Target to prevent product shortages by forecasting demand."
+230. "The nonprofit's gen AI tool gives aid workers evidence-based solutions to issues in the field, allowing for fast decision-making during crises."
+231. "Democratic Rep. Ro Khanna said there wasn't a cover-up of former President Biden's mental fitness ahead of 2024 election, but Democrats have to admit their mistakes."
+232. "A researcher monitoring Axial Seamount, 300 miles off the coast of Oregon, says the eruption is expected to happen before the year is over."
+233. "A pair of U.K. scholars discovered the mislabled document in Harvard Law School's digital archives. The university bought it for just $27.50 in 1946.  It turned out to be an authentic copy dating to 1300."
+234. "In the shadow of President Trump's efforts to lower drug prices, the Medicare drug price negotiation process that began in the Biden administration continues."
+235. "The world's largest retailer says it won't be able to absorb all the costs from higher tariffs on imported goods, particularly from China. Already in April, shoppers began tightening their budgets as retail spending did not grow much compared to March."
+236. "Doom is one of the most well-known series in gaming but it still has to work to find new players."
+237. "More than $22 billion of net inflows poured into long-short equity hedge funds in the first quarter."
+238. "Economists at Goldman Sachs (GS) say the new round of U.S. tariffs will give inflation a temporary bump later this year — but expect the effects to fade in 2026. In a note released Monday and credited to its chief U.S. economist David Mericle, the bank projec…"
+239. "The International Monetary Fund expects global trade tensions will wipe 0.3 percentage points off UK growth."
+240. "The U.S. inflation rate in April was almost negligible: 0.2% month-over-month, or 2.3% annually the lowest since 2021. Good news, right?Read more..."

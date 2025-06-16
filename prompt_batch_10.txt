@@ -1,0 +1,31 @@
+
+I will give you a list of numbered news summaries. Your task is to analyze each summary's likely short-term impact on three Turkish assets: USD/TRY (Dolar), Gold (Altın), and BIST 100 (Borsa).
+
+Rating Scale:
+- For USD/TRY (Dolar): A positive score means Lira strengthens (dollar falls). 1 = very negative (dollar soars), 3 = neutral, 5 = very positive (dollar drops).
+- For Gold (Altın) and Stock Market (Borsa): A positive score means the asset's value increases. 1 = very negative (price falls), 3 = neutral, 5 = very positive (price rises).
+
+For each number, you MUST respond with ONLY a valid JSON object in the format {"dolar": <score>, "altin": <score>, "borsa": <score>}. Do not add any other text or numbering. Start with the response for number 1, then a new line for number 2, and so on.
+
+Here are the summaries:
+---
+181. "Protesters opposed to federal immigration raids clashed with law enforcement in Los Angeles over the weekend. And, who took home a Tony award last night."
+182. "This year, there have been at least 22 incidents involving lithium batteries in air travel, according to data from the Federal Aviation Administration."
+183. "The White House could appeal the injunction issued by the judge but the decision in a federal court is a setback for President Trump."
+184. "Whether you get your forecast from an app on your phone, a website or a meteorologist on TV, most of the underlying information comes from the federal government."
+185. "A federal judge blocked Trump's executive order to shut down the Department of Education and ordered fired workers to be reinstated."
+186. "The Big Law firm Sullivan & Cromwell is arguing that additional appeals for Trump's hush-money convictions should be heard in federal court."
+187. "The economic vibes are improving, with consumers' inflation expectations falling last month for the first time in 2025. On Wednesday, CPI was also cool."
+188. "Mark Cuban said that tariff unpredictability is forcing businesses to stockpile and preventing price hikes, keeping inflation low."
+189. "In addition to inflation and US-China trade, a key bond auction is on investors' radar. A $22 billion sale of 30-year bonds is scheduled for Thursday."
+190. "The Congressional Budget Office projected President Trump's tariffs could raise trillions of dollars over the next decade — but they could also lead to higher inflation and slower economic growth."
+191. "nan"
+192. "BNPL services have become an enduring part of the US economy. That might not be a good sign."
+193. "Prices are rising rapidly for some everyday items like coffee and beef."
+194. "Warner Bros. has another horror hit on its hands with critics and audiences this year thanks to 'Final Destination Bloodlines.'"
+195. "Nonpartisan Congressional Budget Office estimates that Trump’s tariffs would shrink the economy and add to inflation while reducing the federal deficit by $2.8 trillion."
+196. "Four moves that will buy you time, create options, and protect you against the worst."
+197. "Jamie Dimon says there’s no point looking at consumer sentiment for a hint on the economy. Analysts will have to wait for the real data to trickle through."
+198. "The OECD said President Donald Trump's tariffs are hitting economic growth in the US and globally too, and warned of consequences for jobs and incomes."
+199. "Goldman Sachs called Heineken an "underperformer" among its peers."
+200. "Klarna's net loss more than doubled in the first quarter [non-paywalled link] as more consumers failed to repay loans from the Swedish "buy now, pay later" lender as concerns rose about the financial health of US consumers. Financial Times: The fintech, which…"

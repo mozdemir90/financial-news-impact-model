@@ -1,0 +1,31 @@
+
+I will give you a list of numbered news summaries. Your task is to analyze each summary's likely short-term impact on three Turkish assets: USD/TRY (Dolar), Gold (Altın), and BIST 100 (Borsa).
+
+Rating Scale:
+- For USD/TRY (Dolar): A positive score means Lira strengthens (dollar falls). 1 = very negative (dollar soars), 3 = neutral, 5 = very positive (dollar drops).
+- For Gold (Altın) and Stock Market (Borsa): A positive score means the asset's value increases. 1 = very negative (price falls), 3 = neutral, 5 = very positive (price rises).
+
+For each number, you MUST respond with ONLY a valid JSON object in the format {"dolar": <score>, "altin": <score>, "borsa": <score>}. Do not add any other text or numbering. Start with the response for number 1, then a new line for number 2, and so on.
+
+Here are the summaries:
+---
+61. "An exclusive look inside the closely guarded factory Trump wants to become a foundation stone for his American golden age. But the company story exemplifies the success of modern globalisation"
+62. "After the departure of one Republican and one Democratic commissioner on Friday, the Federal Communications Commission is down to two members, falling below the quorum threshold for what's typically a five-person panel. Commissioners Nathan Simington and Geof…"
+63. "The US president said he would also talk to Ukrainian President Volodymyr Zelensky, and Nato leaders."
+64. "The Court of International Trade ruled that an emergency law invoked by the White House does not provide unilateral authority to impose tariffs on nearly every country."
+65. "They city sees a second day of clashes over raids by federal agents on undocumented migrants."
+66. "There has been a growing tension between the leaders over Iran - now the US is distancing itself from Israel's "unilateral action"."
+67. "Unified heavyweight champion Oleksandr Usyk offers US president Donald Trump the chance to live in his house for a week to experience the reality of the war in Ukraine."
+68. "The tech billionaire took to his social media site, X, as the president expressed disappointment in his opposition to his spending bill."
+69. "More Americans than ever are becoming eligible for a class action payout—but the money is going to a small, dedicated group of people who are paying attention."
+70. "The UAE and Saudi Arabia are investing billions in US AI infrastructure. The deals could help the US in the AI race against China."
+71. "Plus: An Iranian man pleads guilty to a Baltimore ransomware attack, Russia’s nuclear blueprints get leaked, a Texas sheriff uses license plate readers to track a woman who got an abortion, and more."
+72. "Lee Jae-myung secured a storming victory, but his honeymoon will barely last the day."
+73. "France's Emmanuel Macron is visiting Greenland to hold talks on North Atlantic and Arctic security, climate change and critical minerals."
+74. "The crypto billionaire now sports a Trump-branded watch after an exclusive dinner with President Donald Trump."
+75. "Secretary of Homeland Security Kristi Noem got a pop quiz at a senate hearing this week. The question came from Democratic Senator Maggie Hassan, of New Hampshire.<br><br>Hassan asked Noem to to explain habeas corpus.  <br><br>For the record, habeas corpus is…"
+76. "The US Department of Commerce has renamed its AI Safety Institute to the Center for AI Standards and Innovation (CAISI), shifting its focus from overall safety to combating national security risks and preventing “burdensome and unnecessary regulation” abroad.…"
+77. "Musk has repeatedly struck out at the bill, saying it undercuts Doge's work to slash federal spending."
+78. "Six Americans tell the BBC that there's clearly a problem in Los Angeles - they just don't agree with who's at fault."
+79. "The president hasn't directly targeted the nascent industry, but his clean energy rollbacks could hurt it."
+80. "The BBC's Gary O'Donoghue analyses how the South African president reacted in an extraordinary Oval Office meeting."
