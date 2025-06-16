@@ -13,7 +13,7 @@ Bu proje, finansal haber metinlerinin Dolar/TRY, Altın ve BIST 100 endeksi üze
 
 1.  Bu depoyu klonlayın:
     ```bash
-    git clone https://github.com/kullanici-adiniz/proje-adiniz.git
+    git clone https://github.com/mozdemir90/financial-news-impact-model.git
     cd proje-adiniz
     ```
 
