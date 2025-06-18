@@ -1,4 +1,4 @@
-<!-- templates/index.html -->
+<!-- templates/index.html (Güncellenmiş Hali) -->
 
 <!doctype html>
 <html lang="tr">
@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Finansal Etki Tahmin Modeli</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body { background-color: #f8f9fa; }
@@ -18,18 +17,22 @@
     <div class="container">
         <div class="text-center my-4">
             <h1>Finansal Etki Tahmin Modeli</h1>
-            <p class="lead">Haber metinlerinin Dolar/TRY, Altın ve Borsa üzerindeki potansiyel etkisini (1-5 arası) tahmin edin.</p>
+            <p class="lead">Haber metinlerinin Dolar/TRY, Altın ve Borsa üzerindeki potansiyel etkisini tahmin edin.</p>
         </div>
 
         <div class="card p-4">
             <form method="POST" action="/">
                 <div class="mb-3">
                     <label for="news_text" class="form-label"><b>Haber Metnini Buraya Girin:</b></label>
-                    <textarea class="form-control" id="news_text" name="news_text" rows="6" required></textarea>
+                    <!-- DEĞİŞTİ: Metin kutusu artık Flask'tan gelen 'submitted_text' ile dolduruluyor. -->
+                    <textarea class="form-control" id="news_text" name="news_text" rows="6" required>{{ submitted_text or '' }}</textarea>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Etkiyi Tahmin Et</button>
             </form>
         </div>
+
+       
+
 
         <!-- Sonuçlar sadece bir tahmin yapıldığında gösterilir -->
         {% if results %}
@@ -55,22 +58,21 @@
                     {% endfor %}
                 </tbody>
             </table>
-            
-            <!-- YENİ AÇIKLAMA KUTUSU -->
-            <div class="alert alert-info mt-3" role="alert">
-                <h5 class="alert-heading">Skorlar Nasıl Yorumlanır?</h5>
-                <p>Skorlar <strong>1 (Çok Olumsuz Etki)</strong> ile <strong>5 (Çok Olumlu Etki)</strong> arasında bir değer alır. Her bir varlık için anlamları:</p>
-                <hr>
-                <ul>
-                    <li><strong>Dolar/TRY:</strong> Yüksek skor (5'e yakın), kurun <strong>yükselmesi</strong> (Dolar'ın değer kazanması / TRY'nin değer kaybetmesi) yönünde bir etkiyi belirtir.</li>
-                    <li><strong>Altın:</strong> Yüksek skor (5'e yakın), Altın fiyatının (ons/TL) <strong>artması</strong> yönünde bir etkiyi belirtir.</li>
-                    <li><strong>Borsa (BIST 100):</strong> Yüksek skor (5'e yakın), Borsa endeksinin <strong>yükselmesi</strong> (pozitif etki) yönünde bir etkiyi belirtir.</li>
-                </ul>
-            </div>
-            <!-- YENİ AÇIKLAMA KUTUSU SONU -->
-
         </div>
         {% endif %}
+        
+         <!-- DEĞİŞTİ: Bilgilendirme kutusu formun altına taşındı ve her zaman görünür. -->
+         <div class="alert alert-info mt-3" role="alert">
+            <h5 class="alert-heading">Skorlar Nasıl Yorumlanır?</h5>
+            <p>Skorlar <strong>1 (Çok Olumsuz Etki)</strong> ile <strong>5 (Çok Olumlu Etki)</strong> arasında bir değer alır. Her bir varlık için anlamları:</p>
+            <hr>
+            <ul>
+                <li><strong>Dolar/TRY:</strong> Yüksek skor (5'e yakın), kurun <strong>yükselmesi</strong> (Dolar'ın değer kazanması) yönünde bir etkiyi belirtir.</li>
+                <li><strong>Altın:</strong> Yüksek skor (5'e yakın), Altın fiyatının (ons/TL) <strong>artması</strong> yönünde bir etkiyi belirtir.</li>
+                <li><strong>Borsa (BIST 100):</strong> Yüksek skor (5'e yakın), Borsa endeksinin <strong>yükselmesi</strong> (pozitif etki) yönünde bir etkiyi belirtir.</li>
+            </ul>
+        </div>
+
     </div>
 </body>
 </html>

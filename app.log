@@ -1,0 +1,27 @@
+2025-06-18 17:03:58,171 - INFO - Uygulama başlatılıyor...
+2025-06-18 17:03:58,171 - INFO - Kaynaklar yükleniyor...
+2025-06-18 17:04:06,015 - INFO - 400000 kelimelik GloVe vektörü yüklendi.
+2025-06-18 17:04:06,531 - INFO - Tüm ML modelleri başarıyla yüklendi.
+2025-06-18 17:04:06,531 - INFO - Uygulama artık istekleri kabul etmeye hazır.
+2025-06-18 17:04:09,322 - INFO - Uygulama başlatılıyor...
+2025-06-18 17:04:09,322 - INFO - Kaynaklar yükleniyor...
+2025-06-18 17:04:17,104 - INFO - 400000 kelimelik GloVe vektörü yüklendi.
+2025-06-18 17:04:17,542 - INFO - Tüm ML modelleri başarıyla yüklendi.
+2025-06-18 17:04:17,542 - INFO - Uygulama artık istekleri kabul etmeye hazır.
+2025-06-18 17:05:25,904 - INFO - POST isteği alındı. Gelen metin: 'In an emergency briefing, the International Monetary Fund (IMF) stated that several emerging market ...'
+2025-06-18 17:05:26,059 - INFO - Tahmin sonuçları: {'RandomForest': {'Dolar': '2.64', 'Altın': '2.81', 'Borsa': '2.61'}, 'XGBoost': {'Dolar': '2.93', 'Altın': '2.43', 'Borsa': '2.79'}, 'LightGBM': {'Dolar': '2.36', 'Altın': '2.72', 'Borsa': '2.14'}}
+2025-06-18 17:06:17,250 - INFO - POST isteği alındı. Gelen metin: 'In a confidential report leaked today, central banks from China, India, and several Gulf countries h...'
+2025-06-18 17:06:17,325 - INFO - Tahmin sonuçları: {'RandomForest': {'Dolar': '2.45', 'Altın': '3.07', 'Borsa': '2.50'}, 'XGBoost': {'Dolar': '2.75', 'Altın': '3.80', 'Borsa': '3.22'}, 'LightGBM': {'Dolar': '2.59', 'Altın': '3.47', 'Borsa': '2.67'}}
+2025-06-18 17:10:11,655 - INFO - Uygulama başlatılıyor...
+2025-06-18 17:10:11,656 - INFO - Kaynaklar yükleniyor...
+2025-06-18 17:10:19,493 - INFO - 400000 kelimelik GloVe vektörü yüklendi.
+2025-06-18 17:10:19,933 - INFO - Tüm ML modelleri başarıyla yüklendi.
+2025-06-18 17:10:19,933 - INFO - Uygulama artık istekleri kabul etmeye hazır.
+2025-06-18 17:10:20,076 - INFO - POST isteği alındı. Gelen metin: 'In a confidential report leaked today, central banks from China, India, and several Gulf countries h...'
+2025-06-18 17:10:20,191 - INFO - Tahmin sonuçları: {'RandomForest': {'Dolar': '2.45', 'Altın': '3.07', 'Borsa': '2.50'}, 'XGBoost': {'Dolar': '2.75', 'Altın': '3.80', 'Borsa': '3.22'}, 'LightGBM': {'Dolar': '2.59', 'Altın': '3.47', 'Borsa': '2.67'}}
+2025-06-18 17:10:29,795 - INFO - POST isteği alındı. Gelen metin: 'In a confidential report leaked today, central banks from China, India, and several Gulf countries h...'
+2025-06-18 17:10:29,864 - INFO - Tahmin sonuçları: {'RandomForest': {'Dolar': '2.45', 'Altın': '3.07', 'Borsa': '2.50'}, 'XGBoost': {'Dolar': '2.75', 'Altın': '3.80', 'Borsa': '3.22'}, 'LightGBM': {'Dolar': '2.59', 'Altın': '3.47', 'Borsa': '2.67'}}
+2025-06-18 17:11:23,223 - INFO - POST isteği alındı. Gelen metin: 'In a confidential report leaked today, central banks from China, India, and several Gulf countries h...'
+2025-06-18 17:11:23,292 - INFO - Tahmin sonuçları: {'RandomForest': {'Dolar': '2.45', 'Altın': '3.07', 'Borsa': '2.50'}, 'XGBoost': {'Dolar': '2.75', 'Altın': '3.80', 'Borsa': '3.22'}, 'LightGBM': {'Dolar': '2.59', 'Altın': '3.47', 'Borsa': '2.67'}}
+2025-06-18 17:11:38,976 - INFO - POST isteği alındı. Gelen metin: 'In an emergency briefing, the International Monetary Fund (IMF) stated that several emerging market ...'
+2025-06-18 17:11:39,048 - INFO - Tahmin sonuçları: {'RandomForest': {'Dolar': '2.64', 'Altın': '2.81', 'Borsa': '2.61'}, 'XGBoost': {'Dolar': '2.93', 'Altın': '2.43', 'Borsa': '2.79'}, 'LightGBM': {'Dolar': '2.36', 'Altın': '2.72', 'Borsa': '2.14'}}

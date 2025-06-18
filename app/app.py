@@ -1,18 +1,29 @@
-# app.py
+# app.py (Güncellenmiş Hali)
 
 import joblib
 import numpy as np
 import re
-import pandas as pd  # DataFrame dönüşümü için
+import pandas as pd
 from nltk.tokenize import word_tokenize
 from flask import Flask, request, render_template
+import logging # YENİ: Loglama kütüphanesini import et
 
-# --- 1. Flask Uygulamasını Başlatma ---
+# --- 1. Flask Uygulamasını Başlatma ve Loglamayı Ayarlama ---
 app = Flask(__name__)
 
+# YENİ: Profesyonel loglama ayarları
+# Sadece dosyaya loglama yapacağız. İsterseniz konsola da ekleyebilirsiniz.
+file_handler = logging.FileHandler('app.log') # Logların kaydedileceği dosya
+file_handler.setLevel(logging.INFO) # Kaydedilecek minimum log seviyesi
+# Log formatı: Tarih/Saat - Log Seviyesi - Mesaj
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+file_handler.setFormatter(formatter)
+app.logger.addHandler(file_handler)
+app.logger.setLevel(logging.INFO)
+
+
 # --- 2. Gerekli Dosyaları ve Modelleri ÖNCEDEN Yükleme ---
-# Bu kısım çok önemli! Modelleri ve GloVe dosyasını her istekte değil,
-# uygulama başlarken SADECE BİR KEZ yüklüyoruz. Bu, performansı ciddi şekilde artırır.
+app.logger.info("Uygulama başlatılıyor...") # DEĞİŞTİ: print yerine logger kullanıldı
 
 GLOVE_FILE = 'glove.6B.100d.txt'
 RF_MODEL_PATH = 'RandomForest_model.joblib'
@@ -22,7 +33,7 @@ EMBEDDING_DIM = 100
 
 def load_resources():
     """Tüm gerekli modelleri ve GloVe vektörlerini belleğe yükler."""
-    print("Kaynaklar yükleniyor... Lütfen bekleyin.")
+    app.logger.info("Kaynaklar yükleniyor...") # DEĞİŞTİ
     
     # GloVe vektörlerini yükle
     embeddings_index = {}
@@ -32,6 +43,7 @@ def load_resources():
             word = values[0]
             coefs = np.asarray(values[1:], dtype='float32')
             embeddings_index[word] = coefs
+    app.logger.info(f"{len(embeddings_index)} kelimelik GloVe vektörü yüklendi.") # DEĞİŞTİ
     
     # Makine öğrenmesi modellerini yükle
     models = {
@@ -39,17 +51,17 @@ def load_resources():
         "XGBoost": joblib.load(XGB_MODEL_PATH),
         "LightGBM": joblib.load(LGBM_MODEL_PATH)
     }
+    app.logger.info("Tüm ML modelleri başarıyla yüklendi.") # DEĞİŞTİ
     
-    print("Tüm kaynaklar başarıyla yüklendi.")
     return embeddings_index, models
 
 # Kaynakları global değişkenlere ata
 glove_vectors, ml_models = load_resources()
+app.logger.info("Uygulama artık istekleri kabul etmeye hazır.") # DEĞİŞTİ
 
-# --- 3. Tahmin için Yardımcı Fonksiyonlar (predict.py'dan alındı) ---
+# --- 3. Tahmin için Yardımcı Fonksiyonlar (Aynı kaldı) ---
 
 def text_to_vector(text, embeddings_index, embedding_dim):
-    """Bir metni, kelime vektörlerinin ortalamasını alarak tek bir vektöre dönüştürür."""
     text = text.lower()
     text = re.sub(r'\d+', '', text)
     text = re.sub(r'[^\w\s]', '', text)
@@ -70,11 +82,8 @@ def text_to_vector(text, embeddings_index, embedding_dim):
     return text_vector
 
 def predict_impact(text_input):
-    """Verilen bir haber metni için etki skorlarını tahmin eder."""
     vector = text_to_vector(text_input, glove_vectors, EMBEDDING_DIM)
     vector = vector.reshape(1, -1)
-    
-    # Scikit-learn uyarısını önlemek için DataFrame'e dönüştürelim
     feature_names = [f'feature_{i}' for i in range(EMBEDDING_DIM)]
     vector_df = pd.DataFrame(vector, columns=feature_names)
     
@@ -86,27 +95,29 @@ def predict_impact(text_input):
             "Altın": f"{pred[1]:.2f}",
             "Borsa": f"{pred[2]:.2f}"
         }
+    app.logger.info(f"Tahmin sonuçları: {predictions}") # YENİ: Tahmin sonucunu logla
     return predictions
 
 # --- 4. Web Sayfası Rotalarını Tanımlama ---
 
+# app.py (Sadece bu fonksiyonu güncelleyin)
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     results = None
+    news_text = "" # YENİ: Değişkeni başlangıçta boş bir string olarak tanımla
+
     # Eğer kullanıcı formu doldurup POST isteği gönderdiyse:
     if request.method == 'POST':
-        news_text = request.form['news_text']
+        news_text = request.form['news_text'] # Kullanıcının girdiği metni al
+        app.logger.info(f"POST isteği alındı. Gelen metin: '{news_text[:100]}...'")
         if news_text:
             # Tahmin fonksiyonunu çağır
             results = predict_impact(news_text)
     
-    # Hem GET isteğinde (sayfa ilk açıldığında) hem de POST isteğinde
-    # (form gönderildiğinde) 'index.html' şablonunu render et.
-    # POST durumunda 'results' değişkeni dolu gidecek.
-    return render_template('index.html', results=results)
+    # DEĞİŞTİ: Artık 'submitted_text' değişkenini de şablona gönderiyoruz.
+    return render_template('index.html', results=results, submitted_text=news_text)
 
 # --- 5. Uygulamayı Çalıştırma ---
 if __name__ == '__main__':
-    # debug=True, kodda değişiklik yaptığınızda sunucunun otomatik yeniden başlamasını sağlar.
-    # Production'da (gerçek ortamda) debug=False olmalıdır.
     app.run(debug=True)

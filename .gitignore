@@ -15,3 +15,4 @@ glove.6B.100d.txt
 # IDE'lerin oluşturduğu konfigürasyon dosyaları (isteğe bağlı)
 .idea/
 .vscode/
+.env
